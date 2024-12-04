@@ -77,12 +77,14 @@ Play around with TFE Team assignments.
 
 ## Getting Started
 
-There are a few things you will need to get started, and unfortunately some of this is manual.
+There are a few things you will need to get started:
 
 - A running TFE instance that is publicly accessible.
 - A company email address (used for an Okta Admin).
 - A personal email address, preferably gmail (used for the test users we will create).
   - We will leverage "plus addressing" to avoid the need to need a new email account for each test user.
+
+The next steps are unfortunately manual (:chicken: meet :egg:)
 
 ### Create an Okta Dev Account
 
@@ -92,7 +94,7 @@ Navigate to https://developer.okta.com/signup/, in the Workforce Identity Cloud 
 
 You will need a company email address, but in my case I was able to use an alias in `tstraub+oktaadmin@hashicorp.com` as the Okta Admin user. This user will only be used to configure Okta, not to access TFE.
 
-Once you sign up, you should have access to domain in the format of "https://dev-{Some Random Numbers}-admin.okta.com", this will be your Okta Portal.
+Once you sign up, you should have access to domain in the format of "https://dev-[Some Random Numbers]-admin.okta.com", this will be your Okta Portal.
 
 ### Configure Okta
 
